@@ -1,4 +1,7 @@
 import React from "react";
+import PropType from "prop-types";
+
+
 
 //create the card component
 const Card = (props) => {
@@ -15,4 +18,10 @@ const Card = (props) => {
     </div> 
     );
 };
+
+//creating the props
+Card.propTypes = {
+	description: PropType.string
+}
+
 export default Card;
